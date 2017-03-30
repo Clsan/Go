@@ -80,6 +80,49 @@ func prob2441() {
 	}
 }
 
+func prob1924() {
+	var m, d, total int
+	fmt.Scanf("%d %d", &m, &d)
+	for i := 1; i < m; i++ {
+		if i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12 {
+			total += 31
+		} else if i == 2 {
+			total += 28
+		} else {
+			total += 30
+		}
+	}
+
+	total += d
+
+	remainder := total % 7
+
+	if remainder == 0 {
+		fmt.Printf("SUN\n")
+	} else if remainder == 1 {
+		fmt.Printf("MON\n")
+	} else if remainder == 2 {
+    fmt.Printf("TUE\n")
+  } else if remainder == 3 {
+    fmt.Printf("WED\n")
+  } else if remainder == 4 {
+    fmt.Printf("THU\n")
+  } else if remainder == 5 {
+    fmt.Printf("FRI\n")
+  } else if remainder == 6 {
+    fmt.Printf("SAT\n")
+  }
+}
+
+func prob8393() {
+	var x, result int
+	fmt.Scanf("%d", &x)
+	for i := 1; i <= x; i++ {
+		result += i
+	}
+	fmt.Printf("%d\n", result)
+}
+
 // 100자리 숫자까지 들어올 수 있음
 // Big Int 찾아보아야 함
 func prob11720() {
@@ -121,6 +164,8 @@ func main() {
 	// prob2439()
 	// prob2440()
 	// prob2441()
-	prob11720()
+	prob1924()
+	// prob8393()
+	// prob11720()
 	// prob11721()
 }
