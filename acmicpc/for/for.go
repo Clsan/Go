@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"strconv"
 )
 
 func prob2741() {
@@ -123,23 +123,15 @@ func prob8393() {
 	fmt.Printf("%d\n", result)
 }
 
-// 100자리 숫자까지 들어올 수 있음
-// Big Int 찾아보아야 함
 func prob11720() {
-	var n, x int
+	var n, result int64
+	var x string
 	fmt.Scanf("%d", &n)
-	fmt.Scanf("%d", &x)
+	fmt.Scanf("%s", &x)
 
-	if n == 0  || x / int(math.Pow(float64(10), float64(n))) != 0 {
-		return
-	}
-
-	var div, result int
-	for i := n - 1; i >= 0; i-- {
-		div = int(math.Pow(float64(10), float64(i)))
-		result += x / div
-
-		x = x % div
+	for i :=  0; i < len(x); i++ {
+		tmp, _ := strconv.ParseInt(string(x[i]), 10, 32)
+		result += tmp
 	}
 
 	fmt.Printf("%d\n", result)
@@ -164,8 +156,8 @@ func main() {
 	// prob2439()
 	// prob2440()
 	// prob2441()
-	prob1924()
+	// prob1924()
 	// prob8393()
-	// prob11720()
+	prob11720()
 	// prob11721()
 }
