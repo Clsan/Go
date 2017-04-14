@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -22,19 +22,19 @@ func prob9498() {
 	} else if point >= 80 {
 		fmt.Printf("B\n")
 	} else if point >= 70 {
-	  fmt.Printf("C\n")
+		fmt.Printf("C\n")
 	} else if point >= 60 {
-	  fmt.Printf("D\n")
+		fmt.Printf("D\n")
 	} else {
-	  fmt.Printf("F\n")
+		fmt.Printf("F\n")
 	}
 }
 
 func prob10871() {
 	var n, x int
-		
+
 	fmt.Scanf("%d %d", &n, &x)
-	in, err := bufio.NewReader(os.Stdin).ReadString('\n')	
+	in, err := bufio.NewReader(os.Stdin).ReadString('\n')
 	if err != nil {
 		return
 	}
@@ -48,7 +48,7 @@ func prob10871() {
 		if int(parsed) < x {
 			fmt.Printf("%d ", int(parsed))
 		}
-	}	
+	}
 }
 
 func main() {

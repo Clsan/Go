@@ -6,7 +6,7 @@ import (
 )
 
 func prob2741() {
-  var x int
+	var x int
 	fmt.Scanf("%d", &x)
 	for i := 1; i < x; i++ {
 		fmt.Printf("%d\n", i)
@@ -15,7 +15,7 @@ func prob2741() {
 }
 
 func prob2742() {
-  var x int
+	var x int
 	fmt.Scanf("%d", &x)
 	for i := x; i > 0; i-- {
 		fmt.Printf("%d\n", i)
@@ -23,10 +23,10 @@ func prob2742() {
 }
 
 func prob2739() {
-  var x int
+	var x int
 	fmt.Scanf("%d", &x)
 	for i := 1; i < 10; i++ {
-		fmt.Printf("%d * %d = %d\n", x, i, x * i)
+		fmt.Printf("%d * %d = %d\n", x, i, x*i)
 	}
 }
 
@@ -45,11 +45,11 @@ func prob2439() {
 	var x int
 	fmt.Scanf("%d", &x)
 	for i := 1; i <= x; i++ {
-		for j := 1; j <= x - i; j++ {
+		for j := 1; j <= x-i; j++ {
 			fmt.Printf(" ")
 		}
 		for j := 1; j <= i; j++ {
-			fmt.Printf("*")	
+			fmt.Printf("*")
 		}
 		fmt.Printf("\n")
 	}
@@ -67,7 +67,7 @@ func prob2440() {
 }
 
 func prob2441() {
-  var x int
+	var x int
 	fmt.Scanf("%d", &x)
 	for i := 1; i <= x; i++ {
 		for j := 1; j < i; j++ {
@@ -102,16 +102,16 @@ func prob1924() {
 	} else if remainder == 1 {
 		fmt.Printf("MON\n")
 	} else if remainder == 2 {
-    fmt.Printf("TUE\n")
-  } else if remainder == 3 {
-    fmt.Printf("WED\n")
-  } else if remainder == 4 {
-    fmt.Printf("THU\n")
-  } else if remainder == 5 {
-    fmt.Printf("FRI\n")
-  } else if remainder == 6 {
-    fmt.Printf("SAT\n")
-  }
+		fmt.Printf("TUE\n")
+	} else if remainder == 3 {
+		fmt.Printf("WED\n")
+	} else if remainder == 4 {
+		fmt.Printf("THU\n")
+	} else if remainder == 5 {
+		fmt.Printf("FRI\n")
+	} else if remainder == 6 {
+		fmt.Printf("SAT\n")
+	}
 }
 
 func prob8393() {
@@ -129,7 +129,7 @@ func prob11720() {
 	fmt.Scanf("%d", &n)
 	fmt.Scanf("%s", &x)
 
-	for i :=  0; i < len(x); i++ {
+	for i := 0; i < len(x); i++ {
 		tmp, _ := strconv.ParseInt(string(x[i]), 10, 32)
 		result += tmp
 	}
@@ -138,10 +138,10 @@ func prob11720() {
 }
 
 func prob11721() {
-  var str string
+	var str string
 	fmt.Scanf("%s", &str)
 	for i := 0; i < len(str); i++ {
-		if i != 0 && i % 10 == 0 {
+		if i != 0 && i%10 == 0 {
 			fmt.Printf("\n")
 		}
 		fmt.Printf("%c", str[i])

@@ -39,9 +39,9 @@ func prob10718() {
 // same as prob11719()
 func prob11718() {
 	in := bufio.NewReader(os.Stdin)
-	var str string 
+	var str string
 	var err error
-	
+
 	for err == nil {
 		str, err = in.ReadString('\n')
 		// fmt.Printf(str)
