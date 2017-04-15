@@ -51,7 +51,46 @@ func prob10871() {
 	}
 }
 
+func prob1546() {
+	var sum, max, x int
+	fmt.Scanf("%d", &x)
+	input, _ := bufio.NewReader(os.Stdin).ReadString('\n')
+
+	inputs := strings.Split(strings.Replace(input, "\n", "", -1), " ")
+	for i := 0; i < x; i ++ {
+		temp, _ := strconv.ParseInt(inputs[i], 10, 64)
+		sum += int(temp)
+		if int(temp) > max {
+			max = int(temp)
+		}
+	}
+
+	fmt.Printf("%.2f\n", float64(sum)*100/float64(max)/float64(x))
+}
+
+func prob1110() {
+	var input int
+	fmt.Scanf("%d", &input)
+	first := input / 10
+	second := input % 10
+
+	newFirst := second
+	newSecond := (first + second) % 10
+	result := 1
+
+	for newFirst != first || newSecond != second {
+		oldFirst := newFirst
+		newFirst = newSecond
+		newSecond = (oldFirst + newSecond) % 10
+		result += 1
+	}
+
+	fmt.Printf("%d\n", result)
+}
+
 func main() {
 	// prob9498()
-	prob10871()
+	// prob10871()
+	// prob1546()
+	prob1110()
 }
