@@ -1,8 +1,8 @@
 package main
 
 import (
-  "fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -13,7 +13,7 @@ func prob1000() int {
 }
 
 func prob1001() int {
-  var x, y int
+	var x, y int
 	fmt.Scanf("%d %d", &x, &y)
 	return x - y
 }
@@ -25,10 +25,10 @@ func prob7287() {
 
 func prob10172() {
 	fmt.Println("|\\_/|")
-  fmt.Println("|q p|   /}")
-  fmt.Println("( 0 )\"\"\"\\")
-  fmt.Println("|\"^\"`    |")
-  fmt.Printf("||_/=\\\\__|")
+	fmt.Println("|q p|   /}")
+	fmt.Println("( 0 )\"\"\"\\")
+	fmt.Println("|\"^\"`    |")
+	fmt.Printf("||_/=\\\\__|")
 }
 
 func prob10718() {
@@ -50,7 +50,7 @@ func prob11718() {
 }
 
 func main() {
-  // fmt.Printf("%d", prob1000())
+	// fmt.Printf("%d", prob1000())
 	// fmt.Printf("%d", prob1001())
 	prob7287()
 	// prob10172()
