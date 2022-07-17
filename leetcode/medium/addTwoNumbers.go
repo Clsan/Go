@@ -39,7 +39,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return res
 }
 
-func main() {
+/*
+func Test() {
 	l1 := &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 2}}}
 	l2 := &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 4}}}
 
@@ -49,3 +50,4 @@ func main() {
 		res = res.Next
 	}
 }
+*/

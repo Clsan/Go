@@ -71,7 +71,8 @@ func isInterleave(s1 string, s2 string, s3 string) bool {
 	return memoDfs(memo, s1, s2, s3, 0, 0)
 }
 
-func main() {
+/*
+func Test() {
 	//println(isInterleave("aabcc", "dbbca", "aadbbcbcac"))
 	//println(isInterleave("aabcc", "dbbca", "aadbbbaccc"))
 
@@ -81,3 +82,4 @@ func main() {
 		"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababbb",
 	))
 }
+*/

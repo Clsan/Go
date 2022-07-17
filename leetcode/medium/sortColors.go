@@ -1,6 +1,6 @@
 package main
 
-func sortColors(colors []int) {
+func SortColors(colors []int) {
 	for i := len(colors) - 1; i > 0; i-- {
 		for j := 0; j < i; j++ {
 			if colors[j] > colors[j+1] {
@@ -12,7 +12,9 @@ func sortColors(colors []int) {
 	}
 }
 
-func main() {
+/*
+func Test() {
 	sortColors([]int{2, 1, 0})
 	sortColors([]int{2, 0, 2, 1, 1, 0})
 }
+*/
