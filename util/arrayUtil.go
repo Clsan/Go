@@ -1,4 +1,4 @@
-package arrayutil
+package util
 
 func Print(arr [][]int) {
 	for i := 0; i < len(arr); i++ {
