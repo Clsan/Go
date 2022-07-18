@@ -9,3 +9,12 @@ func Print(arr [][]int) {
 	}
 	println()
 }
+
+func Contains[T comparable](arr []T, val T) bool {
+	for _, elem := range arr {
+		if elem == val {
+			return true
+		}
+	}
+	return false
+}
